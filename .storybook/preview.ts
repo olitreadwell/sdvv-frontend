@@ -1,4 +1,5 @@
-import { applicationConfig, type Preview } from '@storybook/angular';
+import 'zone.js';
+import { applicationConfig, type Preview } from '@storybook/angular-vite';
 import { setCompodocJson } from '@storybook/addon-docs/angular';
 import docJson from '../documentation.json';
 import { providePrimeNG } from 'primeng/config';

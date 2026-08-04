@@ -1,4 +1,4 @@
-import { Meta, applicationConfig, StoryObj } from '@storybook/angular';
+import { Meta, applicationConfig, StoryObj } from '@storybook/angular-vite';
 
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { IndependentExpendituresV2Component } from './independent-expenditures-v2.component';

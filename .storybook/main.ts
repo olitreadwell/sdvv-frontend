@@ -1,8 +1,8 @@
-import type { StorybookConfig } from '@storybook/angular';
+import type { StorybookConfig } from '@storybook/angular-vite';
 
 const config: StorybookConfig = {
   // Required
-  framework: '@storybook/angular',
+  framework: '@storybook/angular-vite',
   stories: [
     '../src/**/*.mdx',
     '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
