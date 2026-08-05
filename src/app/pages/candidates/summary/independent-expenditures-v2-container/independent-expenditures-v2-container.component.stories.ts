@@ -4,7 +4,7 @@ import { importProvidersFrom } from '@angular/core';
 
 import { IndependentExpendituresV2ContainerComponent } from './independent-expenditures-v2-container.component'
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { GraphQLModule } from 'src/app/graphql/graphql.module';
+import { GraphQLModule } from '../../../../../../src/app/graphql/graphql.module';
 
 const meta: Meta<IndependentExpendituresV2ContainerComponent> = {
   title: 'IndependentExpendituresV2ContainerComponent',
