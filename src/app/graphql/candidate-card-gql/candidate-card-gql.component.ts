@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../../../src/environments/environment';
 
 import {
   CandidateCardComponent,
