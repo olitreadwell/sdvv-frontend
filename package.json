@@ -1,6 +1,9 @@
 {
   "name": "sdvv-frontend",
   "version": "0.0.0",
+  "imports": {
+    "#utils/*": "./src/app/public/util/*.ts"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

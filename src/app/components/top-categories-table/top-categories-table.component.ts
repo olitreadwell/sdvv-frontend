@@ -7,7 +7,7 @@ import {
   OnInit,
 } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
-import { getCompactFormattedCurrency } from 'src/app/public/util/number-formatter';
+import { getCompactFormattedCurrency } from '#utils/number-formatter';
 
 export interface Category {
   id: string;
