@@ -16,20 +16,20 @@ export * from './lib/outside-money-stacked-bar-v2/outside-money-stacked-bar.comp
 export * from './lib/raised-by-industry-bar/raised-by-industry-bar.component';
 export * from './lib/raised-by-industry-bar/raised-by-industry-bar.module';
 
-export * from './lib/raised-by-location-bar/raised-by-location-bar.component'
-export * from './lib/raised-by-location-bar/raised-by-location-bar.module'
+export * from './lib/raised-by-location-bar/raised-by-location-bar.component';
+export * from './lib/raised-by-location-bar/raised-by-location-bar.module';
 
-export * from './lib/raised-by-outside-money-bar/raised-by-outside-money-bar.component'
-export * from './lib/raised-by-outside-money-bar/raised-by-outside-money-bar.module'
+export * from './lib/raised-by-outside-money-bar/raised-by-outside-money-bar.component';
+export * from './lib/raised-by-outside-money-bar/raised-by-outside-money-bar.module';
 
-export * from './lib/raised-in-vs-out-donut/raised-in-vs-out-donut.component'
-export * from './lib/raised-in-vs-out-donut/raised-in-vs-out-donut.module'
+export * from './lib/raised-in-vs-out-donut/raised-in-vs-out-donut.component';
+export * from './lib/raised-in-vs-out-donut/raised-in-vs-out-donut.module';
 
-export * from './lib/raised-vs-spent-bar/raised-vs-spent-bar.component'
-export * from './lib/raised-vs-spent-bar/raised-vs-spent-bar.module'
+export * from './lib/raised-vs-spent-bar/raised-vs-spent-bar.component';
+export * from './lib/raised-vs-spent-bar/raised-vs-spent-bar.module';
 
-export * from './lib/support-oppose-bar/support-oppose-bar.component'
-export * from './lib/support-oppose-bar/support-oppose-bar.module'
+export * from './lib/support-oppose-bar/support-oppose-bar.component';
+export * from './lib/support-oppose-bar/support-oppose-bar.module';
 
 export * from './lib/total-raised-bar/total-raised-bar.component';
 export * from './lib/total-raised-bar/total-raised-bar.module';
@@ -37,4 +37,4 @@ export * from './lib/total-raised-bar/total-raised-bar.module';
 export * from './lib/total-spent-donut/total-spent-donut.component';
 export * from './lib/total-spent-donut/total-spent-donut.module';
 
-export * from './lib/lib-ui-charts.models'
+export * from './lib/lib-ui-charts.models';
