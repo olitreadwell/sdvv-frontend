@@ -3,7 +3,7 @@ import { applicationConfig, type Preview } from '@storybook/angular-vite';
 import { setCompodocJson } from '@storybook/addon-docs/angular';
 import docJson from '../documentation.json';
 import { providePrimeNG } from 'primeng/config';
-import { PrimePreset } from 'src/prime-preset';
+import { PrimePreset } from '../src/prime-preset';
 setCompodocJson(docJson);
 
 const preview: Preview = {
