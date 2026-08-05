@@ -1,4 +1,4 @@
-import { applicationConfig } from '@storybook/angular';
+import { applicationConfig } from '@storybook/angular-vite';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { RaisedVsSpentBarComponent } from './raised-vs-spent-bar.component';

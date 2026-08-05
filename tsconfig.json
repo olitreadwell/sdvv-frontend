@@ -2,7 +2,6 @@
   "compileOnSave": false,
   "compilerOptions": {
     "jsx": "react",
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "esModuleInterop": true,
     "sourceMap": true,
@@ -10,19 +9,14 @@
     "module": "es2020",
     "moduleResolution": "bundler",
     "paths": {
-      "lib-ui-charts": [
-        "./projects/lib-ui-charts/src/public-api.ts"
-      ],
-      "lib-ui-components": [
-        "./projects/lib-ui-components/src/public-api.ts"
-      ]
+      "src/*": ["./src/*"],
+      "lib-ui-charts": ["./projects/lib-ui-charts/src/public-api.ts"],
+      "lib-ui-components": ["./projects/lib-ui-components/src/public-api.ts"]
     },
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "resolveJsonModule": true,
     "useDefineForClassFields": false,
     "skipLibCheck": true

@@ -1,4 +1,4 @@
-import { Meta, applicationConfig, StoryObj } from '@storybook/angular';
+import { Meta, applicationConfig, StoryObj } from '@storybook/angular-vite';
 
 import { DetailsTabOutsideMoneyComponent } from './details-tab-outside-money.component';
 import { importProvidersFrom } from '@angular/core';

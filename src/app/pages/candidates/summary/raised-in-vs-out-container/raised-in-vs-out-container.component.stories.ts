@@ -1,4 +1,4 @@
-import { Meta, applicationConfig, StoryObj } from '@storybook/angular';
+import { Meta, applicationConfig, StoryObj } from '@storybook/angular-vite';
 import { importProvidersFrom } from '@angular/core';
 
 import { RaisedInVsOutComponent } from './raised-in-vs-out-container.component';

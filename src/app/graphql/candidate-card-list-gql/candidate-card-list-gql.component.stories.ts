@@ -1,4 +1,4 @@
-import { applicationConfig, Meta, StoryObj } from '@storybook/angular';
+import { applicationConfig, Meta, StoryObj } from '@storybook/angular-vite';
 import { GraphQLModule } from '../graphql.module';
 import { importProvidersFrom } from '@angular/core';
 

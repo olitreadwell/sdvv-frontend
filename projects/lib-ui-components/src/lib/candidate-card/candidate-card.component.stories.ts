@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/angular';
+import { Meta, StoryObj } from '@storybook/angular-vite';
 
 import { CandidateCardComponent } from './candidate-card.component';
 
@@ -17,6 +17,7 @@ export const Default: Story = {
       firstName: 'First Name',
       lastName: 'Last Name',
       fullName: 'Full Name',
+      isNotOnBallot: false,
     },
     committeeData: {
       raised: 54321,
@@ -33,6 +34,7 @@ export const Name1: Story = {
       firstName: 'One Name',
       lastName: 'One Last Name',
       fullName: 'A Full Name',
+      isNotOnBallot: false,
       description: 'Somewhat long description with multiple titles',
     },
     committeeData: {
