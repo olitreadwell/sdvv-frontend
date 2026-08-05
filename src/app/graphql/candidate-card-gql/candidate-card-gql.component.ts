@@ -43,7 +43,7 @@ export class CandidateCardGQLComponent implements OnChanges {
 
   constructor(
     private candidateInfoGQL: CandidateCardInfoGQL,
-    private candidateCardFinanceDataGQL: CandidateCardFinanceDataGQL
+    private candidateCardFinanceDataGQL: CandidateCardFinanceDataGQL,
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -67,7 +67,7 @@ export class CandidateCardGQLComponent implements OnChanges {
         },
         {
           // errorPolicy: 'all',
-        }
+        },
       )
       .valueChanges.subscribe((result: any) => {
         const response: CandidateCardInfoResponse = result.data;
@@ -90,7 +90,7 @@ export class CandidateCardGQLComponent implements OnChanges {
         },
         {
           // errorPolicy: 'all',
-        }
+        },
       )
       .valueChanges.subscribe((result: any) => {
         const response: CandidateCardFinanceDataResponse = result.data;

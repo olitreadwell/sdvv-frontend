@@ -47,7 +47,7 @@ export class CandidateDetailsHeaderGQLComponent implements OnChanges {
 
   constructor(
     private candidateInfoGQL: CandidateInfoGQL,
-    private candidateFinanceDataGQL: CandidateFinanceDataGQL
+    private candidateFinanceDataGQL: CandidateFinanceDataGQL,
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -71,7 +71,7 @@ export class CandidateDetailsHeaderGQLComponent implements OnChanges {
         },
         {
           // errorPolicy: 'all',
-        }
+        },
       )
       .valueChanges.subscribe((result: any) => {
         const response: CandidateInfoResponse = result.data;
@@ -96,7 +96,7 @@ export class CandidateDetailsHeaderGQLComponent implements OnChanges {
         },
         {
           // errorPolicy: 'all',
-        }
+        },
       )
       .valueChanges.subscribe((result: any) => {
         const response: CandidateFinanceDataResponse = result.data;
