@@ -11,6 +11,13 @@ export interface ContributionGroup {
   percent: number;
 }
 
+type TableDataSource = {
+  colorCode: string;
+  industry: string;
+  amount: number;
+  percentage: number;
+};
+
 @Component({
   selector: 'contributions-by-occupation-table',
   imports: [CommonModule, MatIconModule, MatTableModule, FontAwesomeModule],
@@ -23,7 +30,8 @@ export class ContributionsByOccupationTableComponent {
 
   faCircle = faCircle;
 
-  dataSource = new MatTableDataSource();
+  dataSource: { data: TableDataSource[] } =
+    new MatTableDataSource<TableDataSource>();
   displayedColumns: string[] = [
     'colorCode',
     'industry',
