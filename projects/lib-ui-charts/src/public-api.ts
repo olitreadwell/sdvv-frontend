@@ -6,6 +6,8 @@ export * from './lib/lib-ui-charts.service';
 export * from './lib/lib-ui-charts.component';
 export * from './lib/lib-ui-charts.module';
 
+export * from './lib/contributions-by-code-stacked-bar/contributions-by-code-stacked-bar.component';
+
 export * from './lib/outside-money-stacked-bar/outside-money-stacked-bar.component';
 export * from './lib/outside-money-stacked-bar/outside-money-stacked-bar.module';
 
