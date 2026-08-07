@@ -18,6 +18,7 @@ echarts.use([PieChart, TooltipComponent, SVGRenderer]);
     <div
       class="raised-in-vs-out-chart"
       echarts
+      theme="v5"
       [options]="chartOption"
       [merge]="mergeOption"
     ></div>

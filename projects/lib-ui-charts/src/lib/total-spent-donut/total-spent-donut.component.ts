@@ -24,6 +24,7 @@ echarts.use([PieChart, TooltipComponent, SVGRenderer, GridComponent]);
     <div
       class="total-spent-chart"
       echarts
+      theme="v5"
       [options]="chartOption"
       (chartInit)="onChartInit($event)"
       [merge]="mergeOption"
@@ -151,7 +152,7 @@ export class TotalSpentDonutComponent implements OnChanges {
     return (
       `<div style="font-size: 1em; margin-bottom: 8px">${label}</div>` +
       `<div style="font-size: 1.5em;">${getCompactFormattedCurrency(
-        params.data.value
+        params.data.value,
       )}</div>`
     );
   }

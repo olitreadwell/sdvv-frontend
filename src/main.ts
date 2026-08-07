@@ -14,6 +14,9 @@ import { environment } from './environments/environment';
 import { providePrimeNG } from 'primeng/config';
 import { PrimePreset } from './prime-preset';
 
+// Import the ECharts v5 theme so it self-registers globally
+import 'echarts/theme/v5.js';
+
 if (environment.production) {
   enableProdMode();
 }
@@ -39,7 +42,7 @@ bootstrapApplication(AppComponent, {
     provideRouter(MAIN_ROUTES, withComponentInputBinding()),
     importProvidersFrom(
       BrowserAnimationsModule,
-      GraphQLModule
+      GraphQLModule,
       // NgxEchartsModule.forRoot({
       //   echarts: () => import('echarts')
       // }),
