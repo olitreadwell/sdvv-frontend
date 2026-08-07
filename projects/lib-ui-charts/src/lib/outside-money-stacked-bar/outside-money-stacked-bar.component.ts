@@ -24,6 +24,7 @@ echarts.use([BarChart, SVGRenderer]);
     <div
       class="outside-money-stacked-bar-chart"
       echarts
+      theme="v5"
       [options]="chartOption"
       [merge]="mergeOption"
       (chartInit)="onChartInit($event)"
@@ -115,7 +116,7 @@ export class OutsideMoneyStackedBarComponent implements OnChanges {
   getSeriesOptions(
     committees,
     defaultColor: string,
-    direction: 'left' | 'right'
+    direction: 'left' | 'right',
   ): BarSeriesOption[] {
     const directionMultiplier = direction === 'left' ? -1 : 1;
 
@@ -160,12 +161,12 @@ export class OutsideMoneyStackedBarComponent implements OnChanges {
     const opposedSeries: BarSeriesOption[] = this.getSeriesOptions(
       this.opposedCommittees,
       this.defaultOpposedBarColor,
-      'left'
+      'left',
     );
     const supportSeries: BarSeriesOption[] = this.getSeriesOptions(
       this.supportCommittees,
       this.defaultSupportBarColor,
-      'right'
+      'right',
     );
 
     const seriesSumReducer = (accumulator, currentValue) =>
