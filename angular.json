@@ -32,7 +32,8 @@
             "scripts": [],
             "allowedCommonJsDependencies": [
               "prop-types",
-              "hoist-non-react-statics"
+              "hoist-non-react-statics",
+              "echarts"
             ],
             "extractLicenses": false,
             "sourceMap": true,
