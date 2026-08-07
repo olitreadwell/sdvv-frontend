@@ -1,4 +1,4 @@
-import { applicationConfig } from '@storybook/angular';
+import { applicationConfig } from '@storybook/angular-vite';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { OutsideMoneyStackedBarComponentV2 } from './outside-money-stacked-bar.component';

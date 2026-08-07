@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/angular';
+import { Meta, StoryObj } from '@storybook/angular-vite';
 import { ContributionsByOccupationTableComponent } from './contributions-by-occupation-table.component';
 
 const meta: Meta<ContributionsByOccupationTableComponent> = {

@@ -1,4 +1,4 @@
-import { Meta, StoryObj, applicationConfig } from '@storybook/angular';
+import { Meta, StoryObj, applicationConfig } from '@storybook/angular-vite';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { ContributionsByCodeStackedBarComponent } from './contributions-by-code-stacked-bar.component';

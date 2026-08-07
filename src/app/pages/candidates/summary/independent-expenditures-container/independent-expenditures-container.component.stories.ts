@@ -1,4 +1,4 @@
-import { Meta, applicationConfig, StoryObj } from '@storybook/angular';
+import { Meta, applicationConfig, StoryObj } from '@storybook/angular-vite';
 import { importProvidersFrom } from '@angular/core';
 
 import { IndependentExpendituresContainerComponent } from './independent-expenditures-container.component';

@@ -1,4 +1,4 @@
-import { Meta, applicationConfig, StoryObj } from '@storybook/angular';
+import { Meta, applicationConfig, StoryObj } from '@storybook/angular-vite';
 
 import { YearCardGQLComponent } from './year-card-gql.component';
 import { importProvidersFrom } from '@angular/core';
