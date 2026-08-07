@@ -1,10 +1,9 @@
-
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { AccordionModule } from 'primeng/accordion';
 
-import { OutsideMoneyStackedBarComponentV2 } from 'projects/lib-ui-charts/src/lib/outside-money-stacked-bar-v2/outside-money-stacked-bar.component';
+import { OutsideMoneyStackedBarComponentV2 } from 'lib-ui-charts';
 import { TopCategoriesTableComponent } from 'src/app/components/top-categories-table/top-categories-table.component';
 import { globals } from 'src/app/globals';
 
@@ -16,15 +15,15 @@ export interface IndependentCommittees {
   color: string;
 }
 @Component({
-    imports: [
+  imports: [
     FontAwesomeModule,
     AccordionModule,
     OutsideMoneyStackedBarComponentV2,
-    TopCategoriesTableComponent
-],
-    selector: 'independent-expenditures-v2',
-    templateUrl: './independent-expenditures-v2.component.html',
-    styleUrls: ['./independent-expenditures-v2.component.scss']
+    TopCategoriesTableComponent,
+  ],
+  selector: 'independent-expenditures-v2',
+  templateUrl: './independent-expenditures-v2.component.html',
+  styleUrls: ['./independent-expenditures-v2.component.scss'],
 })
 export class IndependentExpendituresV2Component implements OnChanges {
   @Input() oppositionCommittees: IndependentCommittees[];
@@ -35,7 +34,8 @@ export class IndependentExpendituresV2Component implements OnChanges {
   supportColor = globals.expendituresInSupportColor;
 
   activeAccordionTitle = 'See Independent Expenditure Committees';
-  inactiveAccordionTitle = 'No Independent Expenditures by Outside Committees found';
+  inactiveAccordionTitle =
+    'No Independent Expenditures by Outside Committees found';
   accordionTitle = '';
   committeesFound = false;
 
@@ -74,8 +74,7 @@ export class IndependentExpendituresV2Component implements OnChanges {
     }
   }
 
-  committeeHoveredOver(committee){
+  committeeHoveredOver(committee) {
     this.hoveredCommittee = committee;
   }
-
 }

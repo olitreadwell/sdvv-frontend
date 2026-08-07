@@ -9,12 +9,7 @@ import { BarChart } from 'echarts/charts';
 import { TooltipComponent } from 'echarts/components';
 import { SVGRenderer } from 'echarts/renderers';
 import { DatasetComponent } from 'echarts/components';
-echarts.use([
-  BarChart,
-  TooltipComponent,
-  DatasetComponent,
-  SVGRenderer,
-]);
+echarts.use([BarChart, TooltipComponent, DatasetComponent, SVGRenderer]);
 
 export interface ContributionsByCode {
   ind: number;
@@ -37,6 +32,7 @@ enum DatasetIndex {
     <div
       class="total-raised-chart"
       echarts
+      theme="v5"
       [initOpts]="initOpts"
       (chartInit)="onChartInit($event)"
       [options]="chartOption"

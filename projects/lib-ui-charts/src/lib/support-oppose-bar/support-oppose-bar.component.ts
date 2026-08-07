@@ -16,6 +16,7 @@ echarts.use([BarChart, TooltipComponent, SVGRenderer, GridComponent]);
   template: `<div
     class="outside-spending-chart"
     echarts
+    theme="v5"
     [options]="chartOption"
     [merge]="mergeOption"
   ></div> `,
@@ -76,7 +77,7 @@ export class SupportOpposeBarComponent implements OnChanges {
           formatter: (params) =>
             `{a|${params['name']}} \n {b|${getCompactFormattedCurrency(
               +params['value'],
-              1
+              1,
             )}}`,
           align: 'left',
           rich: {

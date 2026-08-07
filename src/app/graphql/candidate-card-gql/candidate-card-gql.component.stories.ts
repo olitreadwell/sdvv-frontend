@@ -1,4 +1,4 @@
-import { applicationConfig, Meta, StoryObj } from '@storybook/angular';
+import { applicationConfig, Meta, StoryObj } from '@storybook/angular-vite';
 
 import { CandidateCardGQLComponent } from './candidate-card-gql.component';
 import { importProvidersFrom } from '@angular/core';

@@ -32,7 +32,8 @@
             "scripts": [],
             "allowedCommonJsDependencies": [
               "prop-types",
-              "hoist-non-react-statics"
+              "hoist-non-react-statics",
+              "echarts"
             ],
             "extractLicenses": false,
             "sourceMap": true,
@@ -135,28 +136,28 @@
           }
         },
         "storybook": {
-          "builder": "@storybook/angular:start-storybook",
+          "builder": "@storybook/angular-vite:start-storybook",
           "options": {
             "browserTarget": "sdvv-frontend:build",
             "port": 6006
           }
         },
         "storybook-db-local": {
-          "builder": "@storybook/angular:start-storybook",
+          "builder": "@storybook/angular-vite:start-storybook",
           "options": {
             "browserTarget": "sdvv-frontend:build:development",
             "port": 6006
           }
         },
         "storybook-db-staging": {
-          "builder": "@storybook/angular:start-storybook",
+          "builder": "@storybook/angular-vite:start-storybook",
           "options": {
             "browserTarget": "sdvv-frontend:build:db-staging-no-source-map",
             "port": 6006
           }
         },
         "build-storybook": {
-          "builder": "@storybook/angular:build-storybook",
+          "builder": "@storybook/angular-vite:build-storybook",
           "options": {
             "browserTarget": "sdvv-frontend:build"
           }

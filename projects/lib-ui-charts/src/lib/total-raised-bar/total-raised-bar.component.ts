@@ -18,6 +18,7 @@ echarts.use([BarChart, TooltipComponent, SVGRenderer, GridComponent]);
   template: `<div
     class="total-raised-chart"
     echarts
+    theme="v5"
     [options]="chartOption"
     [merge]="mergeOption"
   ></div>`,
