@@ -1,4 +1,4 @@
-import { moduleMetadata } from '@storybook/angular';
+import { moduleMetadata } from '@storybook/angular-vite';
 import { CommonModule } from '@angular/common';
 
 import Button from './button.component';

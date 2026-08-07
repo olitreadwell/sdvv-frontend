@@ -1,4 +1,4 @@
-import { Meta, applicationConfig, StoryObj } from '@storybook/angular';
+import { Meta, applicationConfig, StoryObj } from '@storybook/angular-vite';
 
 import { RaisedInVsOutDonutGQLComponent } from './raised-in-vs-out-donut-gql.component';
 import { importProvidersFrom } from '@angular/core';

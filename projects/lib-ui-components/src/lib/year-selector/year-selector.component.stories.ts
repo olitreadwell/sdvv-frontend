@@ -1,4 +1,4 @@
-import { Meta, applicationConfig, StoryObj } from '@storybook/angular';
+import { Meta, applicationConfig, StoryObj } from '@storybook/angular-vite';
 
 import { YearSelectorComponent } from './year-selector.component';
 import { provideAnimations } from '@angular/platform-browser/animations';

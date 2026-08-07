@@ -1,16 +1,14 @@
-import { applicationConfig, Meta, StoryObj } from '@storybook/angular';
+import { applicationConfig, Meta, StoryObj } from '@storybook/angular-vite';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { RaisedInVsOutDonutComponent } from './raised-in-vs-out-donut.component';
-import { importProvidersFrom } from '@angular/core';
-import { GraphQLModule } from 'src/app/graphql/graphql.module';
 
 const meta: Meta<RaisedInVsOutDonutComponent> = {
   title: 'Lib-ui-charts/Raised In vs. Out of Area Donut',
   component: RaisedInVsOutDonutComponent,
   decorators: [
     applicationConfig({
-      providers: [importProvidersFrom(GraphQLModule), provideAnimations()],
+      providers: [provideAnimations()],
     }),
   ],
 };

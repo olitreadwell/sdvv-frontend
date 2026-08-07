@@ -1,4 +1,4 @@
-import { applicationConfig, Meta, StoryObj } from '@storybook/angular';
+import { applicationConfig, Meta, StoryObj } from '@storybook/angular-vite';
 
 import { YearCardComponent } from './year-card.component';
 import { provideAnimations } from '@angular/platform-browser/animations';

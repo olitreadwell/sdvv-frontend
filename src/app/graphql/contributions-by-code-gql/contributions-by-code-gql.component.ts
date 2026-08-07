@@ -3,7 +3,7 @@ import {
   ContributionsByCodeGQL,
   ContributionsByCode,
 } from './contributions-by-code-gql.query';
-import { ContributionsByCodeStackedBarComponent } from 'projects/lib-ui-charts/src/lib/contributions-by-code-stacked-bar/contributions-by-code-stacked-bar.component';
+import { ContributionsByCodeStackedBarComponent } from 'lib-ui-charts';
 
 @Component({
   selector: 'gql-contributions-by-code',
@@ -40,7 +40,7 @@ export class ContributionsByCodeGQLComponent implements OnChanges {
         },
         {
           // errorPolicy: 'all',
-        }
+        },
       )
       .valueChanges.subscribe((result: any) => {
         const contributionsByCode: ContributionsByCode = result.data;
