@@ -29,6 +29,7 @@ echarts.use([
     <div
       class="raised-by-industry-chart"
       echarts
+      theme="v5"
       [options]="chartOption"
       [initOpts]="initOpts"
       (chartInit)="onChartInit($event)"

@@ -19,6 +19,7 @@ echarts.use([BarChart, TooltipComponent, SVGRenderer]);
   template: `<div
     class="raised-by-outside-money-chart"
     echarts
+    theme="v5"
     [options]="chartOption"
     (chartInit)="onChartInit($event)"
     [merge]="mergeOptions"

@@ -18,6 +18,7 @@ echarts.use([BarChart, TooltipComponent, GridComponent, SVGRenderer]);
   template: `<div
     class="raised-by-location-chart"
     echarts
+    theme="v5"
     [options]="chartOption"
     (chartInit)="onChartInit($event)"
     [merge]="mergeOptions"

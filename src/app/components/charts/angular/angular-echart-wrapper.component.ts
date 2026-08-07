@@ -70,7 +70,7 @@ export class AngularEChartWrapperComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-      this.chart = echarts.init(this.chartContainer.nativeElement);
+      this.chart = echarts.init(this.chartContainer.nativeElement, 'v5');
       this.chart.setOption(this.options());
 
       // listen for ECharts 'click' events and emit via the output
