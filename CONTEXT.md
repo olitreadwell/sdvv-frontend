@@ -25,8 +25,8 @@
 - no maintainer-engaged open issue survives the filters
 
 ## Gap ledger (dedupe — READ FIRST, never re-pick)
-- `2026-09-05` self-found CI gap — outcome: pr-opened — build_on_pull_request.yml + e2e_tests.yml trigger on deleted `dev` branch, so PRs to main never get a build check; fixed trigger to main
+- `2026-09-05` self-found CI gap — outcome: pr-opened (fork PR #3) — build_on_pull_request.yml triggered on deleted `dev` branch, so PRs to main never got a build check; fixed trigger to main; fork build check green
 
 ## Mined gaps (discovered, not yet attempted)
-- `2026-09-05` tests/CI: build_on_pull_request.yml triggers on `branches: [dev]` (deleted); default is main, dependabot PRs target main, so no PR build check runs. Repro: read workflow + branch list. Expected: build check runs on PRs to main. Proposed fix: change trigger to main. Dedupe: no upstream issue/PR addresses CI trigger branch. — status: attempted
+- `2026-09-05` tests/CI: build_on_pull_request.yml triggers on `branches: [dev]` (deleted); default is main, dependabot PRs target main, so no PR build check runs. Repro: read workflow + branch list. Expected: build check runs on PRs to main. Proposed fix: change trigger to main. Dedupe: no upstream issue/PR addresses CI trigger branch. — status: attempted (pr-opened, fork PR #3)
 - `2026-09-05` a11y: header hamburger is `<i (click)>` with no keyboard handler/role — not caught by repo lint (template/recommended lacks click-events rule), so not verifiable with repo tooling. — status: dropped (not lint-verifiable)
